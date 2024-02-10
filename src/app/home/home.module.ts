@@ -1,19 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx'; // Import BarcodeScanner
 import { HomePage } from './home.page';
-import { NFC } from '@ionic-native/nfc/ngx';
-import { HomePageRoutingModule } from './home-routing.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    IonicModule,
-    HomePageRoutingModule
+    IonicModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage],
+  providers: [BarcodeScanner] // Include BarcodeScanner in the providers array
 })
 export class HomePageModule {}

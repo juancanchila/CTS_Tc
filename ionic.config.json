@@ -1,7 +1,8 @@
 {
   "name": "CTS_Tc",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
